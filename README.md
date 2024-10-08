@@ -30,3 +30,18 @@ git fetch --all
 
  **Comment supprimer une branche locale après l'avoir fusionnée dans master ?**
  git branch -d ma-fonctionnalite
+ 
+**Comment interrompre un rebase en cours si vous avez commis une erreur ?**
+git rebase --abort
+
+**Comment lister les commits qui vont être rebasés avant de lancer un rebase ?**
+git log ma-fonctionnalite ^master
+
+**Comment afficher la liste des branches ac�ves et en cours de développement dans
+Gi�low ?**
+git flow feature list
+
+**Comment annuler une branche de correc�f (ho�ix) avant de la finaliser si vous constatez
+une erreur ?**
+git flow hotfix finish mon-correctif
+git branch -d mon-correctif
